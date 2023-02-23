@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="timeOutConcept.TimeOut_1">
+      <class name="expectedExceptionConcept.ExceptedException_1">
         <methods>
-          <include name="timeOutValidation"/>
+          <include name="exceptedException_01"/>
         </methods>
-      </class> <!-- timeOutConcept.TimeOut_1 -->
+      </class> <!-- expectedExceptionConcept.ExceptedException_1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
