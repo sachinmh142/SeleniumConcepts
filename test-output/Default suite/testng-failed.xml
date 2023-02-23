@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="expectedExceptionConcept.ExceptedException_1">
+      <class name="excel.Excel_01">
         <methods>
-          <include name="exceptedException_01"/>
+          <include name="excel_01"/>
         </methods>
-      </class> <!-- expectedExceptionConcept.ExceptedException_1 -->
+      </class> <!-- excel.Excel_01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
