@@ -1,0 +1,135 @@
+testNG Details
+
+
+Test-NG:
+   testNG is a unit testing tool. TestNG is advanced than the Junit.
+
+   It is mainly used to run the code in a systematic order based on the annotations present in the testNG.
+
+   It is a replacement for the main method.
+   
+   //testNG is a unit testing tool used to run the code in systematic order using built in testNG annotations
+--------------------------------------------------------------------------------------------------------------
+
+Q: Advantages of TestNG?
+
+1. It has more annotations than Junit
+
+2. It has more conditions than Junit
+
+3. In testng the execution can be controlled by using testng.xml file
+
+4. TestNG has reporting mechanism (it automatically creates two different .html reports viz.,
+    (a) emailable-report.html
+    (b) index.html
+    
+5. DataProvider is present in testNG This annotation is used to parameterize the testNG @ Tests with complex data/values viz., 
+             Collection, Arrays, Object, data read from the property file, xml file, database etc
+
+
+6. Dependency testing can be achieved in testNG : 
+7. We can group the tests and run them based on the group names.
+
+8. In testNG batch execution is possible @ different levels through testng.xml file viz.
+
+   (a) package level
+   (b) class level
+   (c) method level
+
+8. All the annotaions names are not confusing like junit (Ex: @Before, @After). Here the annotaions names are straight forward.
+
+9. Here methods can be either static OR non-static
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+Q: How to install testNG?
+Case 1:
+Go to Eclipse->Help->Eclipse MarketPlace-> search for testNG->once search is found & the testNG is not installed then install it.
+
+
+Case 2:
+Go to Eclipse->Help->Install new Software->Add the URL http://beust.com/eclipse-> Select testNG checkbox & continue installation.
+
+Case 3:
+Copy the TestNG jars (Manually download OR through Maven pom.xml you can download automatically) to eclipse & set the build path
+
+--------------------------------------------------------------------------------------------------------------
+TestNG annotations: The annotations are the pre/post-requiteies(Except @Test script) in Test classes 
+in testng which will have a definite predefined execution order/flow..
+
+@Test
+@BeforeSuite
+@AfterSuite
+@BeforeTest
+@AfterTest
+@BeforeClass
+@AfterClass
+@BeforeMethod
+@AfterMethod
+@BeforeGroups
+@AfterGroups 
+@Parameters
+@DataProvider
+
+Conditions: All conditions are associated with @Test annotation. //VVIP//
+@Test(timeout=<milliseconds>)
+@Test(expectedExceptions=<exception>.class)
+@Test(enabled=false)
+@Test(priority=<numbers>)
+@Test(groups={"groups names"})
+@Test(dataProvider={""})
+@Test(dependsOnMethods={""})
+@Test(dependsOnGroups={""})
+@Test(alwaysRun=true)
+@Test(invocationCount=<numbers>)
+@Test(Parameter (values=""))
+--------------------------------------------------------------------------------------------------https://www.softwaretestinghelp.com/testng-annotations-and-listeners/
+
+@Test: This annotation is used for Test scripts only. 
+  Here all the @Test will run in Ascending order based on the method name by default.
+
+
+@BeforeSuite: The method with this annotation will always runs first with respect to testNG suite level.
+
+
+@AfterSuite: The method with this annotation will always runs last with respect to testNG suite level 
+@BeforeTest: This method will be executed before each test section is declared in the suite.
+@BeforeClass: This method will be executed before first with respect to particular class
+
+
+@BeforeTest: The method with this annotation will always runs first with respect to the test level 
+             which is present inside the testng.xml file
+
+
+@AfterTest: The method with this annotation will always runs last with respect to the test level which is present inside the testng.xml file
+
+
+@BeforeClass: The method with this annotation will always run first with respect to the particular class.
+
+
+@AfterClass: The method with this annotation will always run last with respect to the particular class.
+
+
+@BeforeMethod: The method with this annotation will always run first for every @Test annotations.
+
+
+@AfterMethod: The method with this annotation will always run last for every @Test annotations
+
+
+@BeforeGroups(): The method with this annotation will always run first with respect to the group name mentioned.
+
+
+@AfterGroups(): The method with this annotation will always run last with respect to the group name mentioned.
+
+
+@Parameters: This annotation is used to parameterize the testNG @Test with simple data/values.
+
+
+@DataProvider: This annotation is used to parameterize the testNG @ Tests with complex data/values viz., Collection, Arrays, Object, data read from the property file, xml file, database etc.

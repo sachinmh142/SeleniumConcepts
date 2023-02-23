@@ -1,4 +1,4 @@
-package parameter_1;
+package parameterConcept1;
 
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;

@@ -6,7 +6,7 @@
 		<parameter name="userName" value="Sachin"></parameter>
 		<parameter name="password" value="Hirermath"></parameter>
 		<classes>
-			<class name="parameter_1.Parameter_1"></class>
+			<class name="parameterConcept1.Parameter_1"></class>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
