@@ -14,33 +14,45 @@ import org.testng.annotations.Test;
 public class Excel_01 {
 
 	@Test
-	public void excel_01() throws IOException {
-		File file = new File("C:\\POI.xlsx"); // creating a new file instance
-		FileInputStream fis = new FileInputStream(file); // obtaining bytes from the file
-		// creating Workbook instance that refers to .xlsx file
-		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		XSSFSheet sheet = wb.getSheetAt(0); // creating a Sheet object to retrieve object
-		String shName = sheet.getSheetName();
-		System.out.println(shName);
-		
-		Iterator<Row> row = sheet.iterator();
-		Iterator<Cell> cellIterator = ((Row) row).cellIterator();   //iterating over each column  
-		while(cellIterator.hasNext())
-		{
-			while (cellIterator.hasNext())   
-			{  
-			Cell cell = cellIterator.next();  
-			switch (cell.getCellType())               
-			{  
-			case Cell.CELL_TYPE_STRING:    //field that represents string cell type  
-			System.out.print(cell.getStringCellValue() + "\t\t\t");  
-			break;  
-			case Cell.CELL_TYPE_NUMERIC:    //field that represents number cell type  
-			System.out.print(cell.getNumericCellValue() + "\t\t\t");  
-			break;  
-			default:  
-			}  
-			}   
-		}
+	public void excel_01() throws IOException {try
+    {
+        FileInputStream file = new FileInputStream(new File("C:\\POI.xlsx"));
+
+        //Create Workbook instance holding reference to .xlsx file
+        XSSFWorkbook workbook = new XSSFWorkbook(file);
+
+        //Get first/desired sheet from the workbook
+        XSSFSheet sheet = workbook.getSheetAt(0);
+        workbook.iterator();
+        //Iterate through each rows one by one
+        Iterator<Row> rowIterator = sheet.iterator();
+        while (rowIterator.hasNext()) 
+        {
+            Row row = rowIterator.next();
+            //For each row, iterate through all the columns
+            Iterator<Cell> cellIterator = row.cellIterator();
+             
+            while (cellIterator.hasNext()) 
+            {
+                Cell cell = cellIterator.next();
+                //Check the cell type and format accordingly
+                switch (cell.getCellType()) 
+                {
+                    case Cell.CELL_TYPE_NUMERIC:
+                        System.out.print(cell.getNumericCellValue()  );
+                        break;
+                    case Cell.CELL_TYPE_STRING:
+                        System.out.print(cell.getStringCellValue()  );
+                        break;
+                }
+            }
+            System.out.println("");
+        }
+        file.close();
+    } 
+    catch (Exception e) 
+    {
+        e.printStackTrace();
+    }
 	}
 }
