@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-24T11:08:05 IST" name="Default suite" finished-at="2023-02-24T11:08:06 IST" duration-ms="990">
+  <suite started-at="2023-02-24T11:24:42 IST" name="Default suite" finished-at="2023-02-24T11:24:42 IST" duration-ms="784">
     <groups>
     </groups>
-    <test started-at="2023-02-24T11:08:05 IST" name="Default test" finished-at="2023-02-24T11:08:06 IST" duration-ms="990">
-      <class name="excel.ReadHowManySheet">
-        <test-method signature="howManySheet()[pri:0, instance:excel.ReadHowManySheet@366647c2]" started-at="2023-02-24T11:08:05 IST" name="howManySheet" finished-at="2023-02-24T11:08:06 IST" duration-ms="918" status="PASS">
+    <test started-at="2023-02-24T11:24:42 IST" name="Default test" finished-at="2023-02-24T11:24:42 IST" duration-ms="784">
+      <class name="excel.Excel_01">
+        <test-method signature="excel_01()[pri:0, instance:excel.Excel_01@366647c2]" started-at="2023-02-24T11:24:42 IST" name="excel_01" finished-at="2023-02-24T11:24:42 IST" duration-ms="719" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- howManySheet -->
-      </class> <!-- excel.ReadHowManySheet -->
+        </test-method> <!-- excel_01 -->
+      </class> <!-- excel.Excel_01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

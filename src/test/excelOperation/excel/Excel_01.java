@@ -16,7 +16,7 @@ public class Excel_01 {
 	@Test
 	public void excel_01() throws IOException {try
     {
-        FileInputStream file = new FileInputStream(new File("C:\\POI.xlsx"));
+        FileInputStream file = new FileInputStream(new File("C:\\Users\\Bala Subramanyam\\eclipse-workspace\\SeleniumConcepts\\ExcelOperations\\XLSSF\\POI.xlsx"));
 
         //Create Workbook instance holding reference to .xlsx file
         XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -39,10 +39,10 @@ public class Excel_01 {
                 switch (cell.getCellType()) 
                 {
                     case Cell.CELL_TYPE_NUMERIC:
-                        System.out.print(cell.getNumericCellValue()  );
+                        System.out.print(cell.getNumericCellValue() +" " );
                         break;
                     case Cell.CELL_TYPE_STRING:
-                        System.out.print(cell.getStringCellValue()  );
+                        System.out.print(cell.getStringCellValue()  +" ");
                         break;
                 }
             }

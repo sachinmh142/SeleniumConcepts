@@ -16,10 +16,10 @@ public class ReadHowManySheet
 	 @Test
 	 public void howManySheet() throws IOException
 	 {
-		    FileInputStream file = new FileInputStream(new File("C:\\Users\\Bala Subramanyam\\eclipse-workspace\\SeleniumConcepts\\ExcelOperations\\XLSSF\\POI.xlsx"));
+		 FileInputStream file = new FileInputStream(new File("C:\\Users\\Bala Subramanyam\\eclipse-workspace\\SeleniumConcepts\\ExcelOperations\\XLSSF\\POI.xlsx"));
 
-	        //Create Workbook instance holding reference to .xlsx file
-	        XSSFWorkbook workbook = new XSSFWorkbook(file);
+	     //Create Workbook instance holding reference to .xlsx file
+	     XSSFWorkbook workbook = new XSSFWorkbook(file);
 	        
 	    
 	     //total number of sheets
@@ -40,7 +40,6 @@ public class ReadHowManySheet
 	     
 	     //using for while loop
 	     int j=0;
-	     
 	     while(j<totalNumberOfSheets)
 	     {
 	    	 System.out.println(workbook.getSheetName(j));
@@ -48,7 +47,6 @@ public class ReadHowManySheet
 	     }
 	    
 	     //using for do while loop
-	     
 	    System.out.println("********************************");
 	 	int k=0;
 	     do {
@@ -58,8 +56,8 @@ public class ReadHowManySheet
 	     }while(k<totalNumberOfSheets);
 	     
 	     System.out.println("********************************");
+	     
 	     //using for iterator
-		      
 	     Iterator<Sheet> it = workbook.iterator(); 
 	     
 	     while(it.hasNext())
