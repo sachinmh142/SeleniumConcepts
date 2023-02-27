@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="excel.Excel_01">
+      <class name="dependsOnMethodsConcept.DependsOnMethods_02">
         <methods>
-          <include name="excel_01"/>
+          <include name="navigatToUrl"/>
+          <include name="launchTheBrowser"/>
+          <include name="createUser"/>
         </methods>
-      </class> <!-- excel.Excel_01 -->
+      </class> <!-- dependsOnMethodsConcept.DependsOnMethods_02 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

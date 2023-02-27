@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-24T11:24:42 IST" name="Default suite" finished-at="2023-02-24T11:24:42 IST" duration-ms="784">
+  <suite started-at="2023-02-27T12:59:23 IST" name="Suite" finished-at="2023-02-27T12:59:23 IST" duration-ms="112">
     <groups>
     </groups>
-    <test started-at="2023-02-24T11:24:42 IST" name="Default test" finished-at="2023-02-24T11:24:42 IST" duration-ms="784">
-      <class name="excel.Excel_01">
-        <test-method signature="excel_01()[pri:0, instance:excel.Excel_01@366647c2]" started-at="2023-02-24T11:24:42 IST" name="excel_01" finished-at="2023-02-24T11:24:42 IST" duration-ms="719" status="PASS">
+    <test started-at="2023-02-27T12:59:23 IST" name="Test" finished-at="2023-02-27T12:59:23 IST" duration-ms="112">
+      <class name="xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.PackageLevel">
+        <test-method signature="closeBrowser()[pri:0, instance:xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.PackageLevel@378542de]" started-at="2023-02-27T12:59:23 IST" name="closeBrowser" finished-at="2023-02-27T12:59:23 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excel_01 -->
-      </class> <!-- excel.Excel_01 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="openBrowser()[pri:0, instance:xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.PackageLevel@378542de]" started-at="2023-02-27T12:59:23 IST" name="openBrowser" finished-at="2023-02-27T12:59:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+      </class> <!-- xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.PackageLevel -->
+      <class name="xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.MethodLevel">
+        <test-method signature="closeBrowser()[pri:0, instance:xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.MethodLevel@e7edb54]" started-at="2023-02-27T12:59:23 IST" name="closeBrowser" finished-at="2023-02-27T12:59:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="openBrowser()[pri:0, instance:xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.MethodLevel@e7edb54]" started-at="2023-02-27T12:59:23 IST" name="openBrowser" finished-at="2023-02-27T12:59:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+      </class> <!-- xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.MethodLevel -->
+      <class name="xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.ClassLevel">
+        <test-method signature="closeBrowser()[pri:0, instance:xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.ClassLevel@77eca502]" started-at="2023-02-27T12:59:23 IST" name="closeBrowser" finished-at="2023-02-27T12:59:23 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="openBrowser()[pri:0, instance:xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.ClassLevel@77eca502]" started-at="2023-02-27T12:59:23 IST" name="openBrowser" finished-at="2023-02-27T12:59:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+      </class> <!-- xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel.ClassLevel -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

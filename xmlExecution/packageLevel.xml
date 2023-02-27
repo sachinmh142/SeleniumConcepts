@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <packages>
+      <package name="xmlExecutionInDifferentWays_MethodLevel_ClassLevel_packageLevel"/>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+ <!-- 1. In package level execution , classes comes under the package will get execute 
+      2.  only package tag under packages tag is enough 
+  -->
