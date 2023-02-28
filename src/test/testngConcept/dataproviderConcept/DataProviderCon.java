@@ -11,9 +11,11 @@ import org.testng.annotations.Test;
  * the other one being TestNG parameters
  *
  */
+
+
 public class DataProviderCon {
 
-	@DataProvider(name="testData")
+	@DataProvider()
 	public Object[][] testData()
 	{
 		return new Object[][] {{"admin","manager"}};
