@@ -135,3 +135,24 @@ Conditions: All conditions are associated with @Test annotation. //VVIP//
 
 
 @DataProvider: This annotation is used to parameterize the testNG @ Tests with complex data/values viz., Collection, Arrays, Object, data read from the property file, xml file, database etc.
+
+
+
+_____________________________________________________________________________
+
+
+parallel execution
+
+if parallel execution running for method means - 
+
+class is having more than one test method and in xml level when we made it as method level 
+each method executes in parallel mode
+
+
+
+if parallel execution running for class means - 
+
+package is having more than one class , each class will get execute in parallel mode
+
+
+

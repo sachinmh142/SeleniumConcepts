@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-28T14:22:19 IST" name="Suite" finished-at="2023-02-28T14:22:19 IST" duration-ms="108">
+  <suite started-at="2023-02-28T16:30:04 IST" name="Suite" finished-at="2023-02-28T16:30:04 IST" duration-ms="95">
     <groups>
     </groups>
-    <test started-at="2023-02-28T14:22:19 IST" name="Test" finished-at="2023-02-28T14:22:19 IST" duration-ms="108">
-      <class name="testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass2">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass2@5ace1ed4]" started-at="2023-02-28T14:22:19 IST" name="beforeMethod" finished-at="2023-02-28T14:22:19 IST" duration-ms="11" status="PASS">
+    <test started-at="2023-02-28T16:30:04 IST" name="Test" finished-at="2023-02-28T16:30:04 IST" duration-ms="95">
+      <class name="parallelExecution_Class.ClassLevelParallel_2">
+        <test-method is-config="true" signature="bm2()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_2@306f16f3]" started-at="2023-02-28T16:30:04 IST" name="bm2" finished-at="2023-02-28T16:30:04 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="test1()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass2@5ace1ed4]" started-at="2023-02-28T14:22:19 IST" name="test1" finished-at="2023-02-28T14:22:19 IST" duration-ms="10" status="PASS">
+        </test-method> <!-- bm2 -->
+        <test-method signature="classlevelParallelExecution1()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_2@306f16f3]" started-at="2023-02-28T16:30:04 IST" name="classlevelParallelExecution1" finished-at="2023-02-28T16:30:04 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass2@5ace1ed4]" started-at="2023-02-28T14:22:19 IST" name="test2" finished-at="2023-02-28T14:22:19 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- classlevelParallelExecution1 -->
+        <test-method is-config="true" signature="am2()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_2@306f16f3]" started-at="2023-02-28T16:30:04 IST" name="am2" finished-at="2023-02-28T16:30:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass2@5ace1ed4]" started-at="2023-02-28T14:22:19 IST" name="test3" finished-at="2023-02-28T14:22:19 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- am2 -->
+        <test-method is-config="true" signature="bm2()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_2@306f16f3]" started-at="2023-02-28T16:30:04 IST" name="bm2" finished-at="2023-02-28T16:30:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass2@5ace1ed4]" started-at="2023-02-28T14:22:19 IST" name="afterMethod" finished-at="2023-02-28T14:22:19 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- bm2 -->
+        <test-method signature="classlevelParallelExecution2()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_2@306f16f3]" started-at="2023-02-28T16:30:04 IST" name="classlevelParallelExecution2" finished-at="2023-02-28T16:30:04 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass2 -->
-      <class name="testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass1">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass1@1cbb87f3]" started-at="2023-02-28T14:22:19 IST" name="beforeMethod" finished-at="2023-02-28T14:22:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- classlevelParallelExecution2 -->
+        <test-method is-config="true" signature="am2()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_2@306f16f3]" started-at="2023-02-28T16:30:04 IST" name="am2" finished-at="2023-02-28T16:30:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="test1()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass1@1cbb87f3]" started-at="2023-02-28T14:22:19 IST" name="test1" finished-at="2023-02-28T14:22:19 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- am2 -->
+      </class> <!-- parallelExecution_Class.ClassLevelParallel_2 -->
+      <class name="parallelExecution_Class.ClassLevelParallel_1">
+        <test-method is-config="true" signature="bm1()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_1@61386958]" started-at="2023-02-28T16:30:04 IST" name="bm1" finished-at="2023-02-28T16:30:04 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass1@1cbb87f3]" started-at="2023-02-28T14:22:19 IST" name="test2" finished-at="2023-02-28T14:22:19 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- bm1 -->
+        <test-method signature="classlevelParallelExecution1()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_1@61386958]" started-at="2023-02-28T16:30:04 IST" name="classlevelParallelExecution1" finished-at="2023-02-28T16:30:04 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass1@1cbb87f3]" started-at="2023-02-28T14:22:19 IST" name="test3" finished-at="2023-02-28T14:22:19 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- classlevelParallelExecution1 -->
+        <test-method is-config="true" signature="am1()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_1@61386958]" started-at="2023-02-28T16:30:04 IST" name="am1" finished-at="2023-02-28T16:30:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass1@1cbb87f3]" started-at="2023-02-28T14:22:19 IST" name="afterMethod" finished-at="2023-02-28T14:22:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- am1 -->
+        <test-method is-config="true" signature="bm1()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_1@61386958]" started-at="2023-02-28T16:30:04 IST" name="bm1" finished-at="2023-02-28T16:30:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testNgAnnotations_BeforeAfterClass2.Sample_BeforeAfterClass1 -->
+        </test-method> <!-- bm1 -->
+        <test-method signature="classlevelParallelExecution2()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_1@61386958]" started-at="2023-02-28T16:30:04 IST" name="classlevelParallelExecution2" finished-at="2023-02-28T16:30:04 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classlevelParallelExecution2 -->
+        <test-method is-config="true" signature="am1()[pri:0, instance:parallelExecution_Class.ClassLevelParallel_1@61386958]" started-at="2023-02-28T16:30:04 IST" name="am1" finished-at="2023-02-28T16:30:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am1 -->
+      </class> <!-- parallelExecution_Class.ClassLevelParallel_1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
