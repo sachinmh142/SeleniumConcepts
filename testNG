@@ -156,3 +156,190 @@ package is having more than one class , each class will get execute in parallel 
 
 
 https://www.toolsqa.com/testng/testng-asserts/
+
+
+Q: Difference between Assert & Verify?
+Ans :
+Assert: Assertion is a validation point .
+Assertion upon failure, it will not run the below lines of code for the particular block.
+
+Verify: Verify is a validation point.
+Verify upon failure, it will run the below lines of code for the particular block as well. 
+But overall test status will be failed.
+
+--------------------
+Q: Assertions in Junit:
+Ans:
+     Assert.assertTrue();
+     Assert.assertFalse();
+     Assert.assertNull();
+     Assert.assertNotNull();
+     Assert.assertEquals()
+     Assert.assertNotEquals();
+     Assert.assertSame();
+     Assert.assertNotSame(); 
+     Assert.assertArrayEquals(): It is not in testNG
+
+
+Q: Assertions in testNG?
+in testng 2 types of assertions are present
+ (1) Hard Assertion
+     Assert.assertTrue();
+     Assert.assertFalse();
+     Assert.assertNull();
+     Assert.assertNotNull();
+     Assert.assertEquals()
+     Assert.assertNotEquals();
+     Assert.assertSame();
+     Assert.assertNotSame();
+
+ (2) Soft Assertion
+     SoftAssert soft = new SoftAssert();
+     soft.assertTrue();
+     soft.assertFalse();
+     soft.assertNull();
+     soft.assertNotNull();
+     soft.assertEquals();
+     soft.assertNotEquals();
+     soft.assertSame();
+     soft.assertNotSame();
+     soft.assertAll();
+
+HardAssert
+SoftAssert
+1. Upon failure, it will stop        
+the execution of whole block          
+OR below codes within                 
+the blocks
+
+
+1. Upon failure, it will not
+    stop the block. Instead it
+     will continue execution.
+
+
+2. Results will be captured upon failure.
+ 2.  Upon failure, it wont  
+    capture the result. Instead
+  It shows the test passed. To
+  capture the failure we   need to use .assertAll()  method at the end of test
+
+
+3. Assert class contains assertion methods which are static in nature
+3. SoftAssert class contains assertion methods which are non-static
+
+
+
+2) What is the difference between Assert and soft Assert 
+Assert       Soft Assert 
+1) It will stop the current method execution when the verification failed 
+1) It will not stop the current method execution when the verification failed 
+2) All the method are static ,we don’t create the object 
+2) All the methods are nonstatic, we have to create the object 
+3) We do not call assertAll() method 
+3)we must call assertAll() method 
+
+Q: Difference between .assertEquals() & .assertSame()?
+Ans:
+.assertEquals(): It checks whether both the values are same
+
+.assertSame(): IT checks whether both value & object references are same.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q: What happens when priority=-1?
+
+
+Q: What if 2 @Tests are having same priority?
+Ex: both tests are having priority=1
+
+
+Q: What If the mentioned group name doesnot exist?
+
+
+Q: Can we achieve parallel execution using testNG?
+yes we can achieve parallel execution in data provider(parallel=true)
+
+     and also in xml , synatx : 
+     parallel="methods"  threadcount="2"
+
+Q: What happens If dependency test fails in testNG? 
+
+
+Q: What is the main purpose of testNG OR unit test tools?
+
+
+Q: Advantages of testNG over Junit?
+already upted above, stupid check tht
+
+Q: Can we execute the java code without main method?
+yes man using testng
+
+Q: Can we run the class members without creating a object to the class?
+No 
+
+Q: Tell me the order of execution?
+@Test
+@BeforeMethod
+@BeforeSuite
+@AfterSuite
+@BeforeGroups
+@AfterTest
+@AfterMethod
+@AfterClass
+
+Q: Perform a task multiple times (say 10 times) without using looping statements?
+invocationcount
+
+Q: How not to execute the tests in testNG?
+enabled false
+
+Q: How to provide pre-condition & post-conditions to each test scripts in testNG?
+@Before and After
+
+Q: Different levels of executing the programmes in testNG?
+method, class, pakage
+
+Q: Can we give same name to both <test> in testng.xml file?
+
+
+Q: How to fail the testNG tests?
+using hardassert
+
+Q: Types of assertions in testNG?
+2
+
+Q: Does SoftAssert captures the failures? How to capture it?
+no we need to use asertall() at last of block code
+
+Q: The class is having methods with all the annotations except @Test? Will it get execute?
+no
+
+Q: How to re-execute the failed tests in testng?
+copy th failed html report paste it in poject and run as xml suite
+
+Q: There are 2 testscripts with @Test annotaions. First testscript failed bcoz of hard assertions.
+ Will the second testscript gets executed?
+yes
+
+Q: Will the Hard assetion OR soft assertions run the finally block?
+gothilla 
+
+
+
+
+
+
+
